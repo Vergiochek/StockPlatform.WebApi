@@ -13,6 +13,12 @@ namespace StockPlatfrom.Core
             _texts = dbClient.GetTextsCollection();
         }
 
+        public Text AddText(Text text)
+        {
+            _texts.InsertOne(text);
+            return text;
+        }
+
         public List<Text> GetTexts() => _texts.Find(text => true).ToList();
     }
 }

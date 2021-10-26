@@ -23,5 +23,12 @@ namespace StockPlatform.WebApi.Controllers
         {
             return Ok(_textServices.GetTexts());
         }
+
+        [HttpPost]
+        public IActionResult AddText(Text text)
+        {
+            _textServices.AddText(text);
+            return Ok(text);
+        }
     }
 }

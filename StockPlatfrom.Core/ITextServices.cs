@@ -9,5 +9,6 @@ namespace StockPlatfrom.Core
     public interface ITextServices
     {
         List<Text> GetTexts();
+        Text AddText(Text text);
     }
 }
