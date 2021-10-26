@@ -24,11 +24,17 @@ namespace StockPlatform.WebApi.Controllers
             return Ok(_textServices.GetTexts());
         }
 
+        [HttpGet("{id}", Name = "GetText")]
+        public IActionResult GetText(string id)
+        {
+            return Ok(_textServices.GetText(id));
+        }
+
         [HttpPost]
         public IActionResult AddText(Text text)
         {
             _textServices.AddText(text);
-            return Ok(text);
+            return CreatedAtRoute("GetText", new { id = text.Id }, text);
         }
     }
 }

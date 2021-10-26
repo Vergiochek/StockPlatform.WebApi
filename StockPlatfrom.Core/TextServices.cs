@@ -19,6 +19,8 @@ namespace StockPlatfrom.Core
             return text;
         }
 
+        public Text GetText(string id) => _texts.Find(text => text.Id == id).First();
+
         public List<Text> GetTexts() => _texts.Find(text => true).ToList();
     }
 }
