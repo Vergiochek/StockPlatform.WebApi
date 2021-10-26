@@ -11,5 +11,8 @@ namespace StockPlatfrom.Core
         List<Text> GetTexts();
         Text GetText(string id);
         Text AddText(Text text);
+
+        void DeleteText(string id);
+        Text UpdateText(Text text);
     }
 }

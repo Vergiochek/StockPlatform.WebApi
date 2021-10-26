@@ -36,5 +36,18 @@ namespace StockPlatform.WebApi.Controllers
             _textServices.AddText(text);
             return CreatedAtRoute("GetText", new { id = text.Id }, text);
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteText(string id)
+        {
+            _textServices.DeleteText(id);
+            return NoContent();
+        }
+
+        [HttpPut]
+        public IActionResult UpdateText(Text text)
+        {
+            return Ok(_textServices.UpdateText(text));
+        }
     }
 }
