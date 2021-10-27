@@ -10,5 +10,6 @@ namespace StockPlatfrom.Core
     public interface IDbClient
     {
         IMongoCollection<Text> GetTextsCollection();
+        IMongoCollection<Photo> GetPhotosCollection();
     }
 }

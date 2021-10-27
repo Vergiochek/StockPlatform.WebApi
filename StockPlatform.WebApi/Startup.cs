@@ -29,6 +29,7 @@ namespace StockPlatform.WebApi
         {
             services.AddSingleton<IDbClient, DbClient>();
             services.Configure<StockPlatformDbConfig>(Configuration);
+            services.AddTransient<IPhotoServices, PhotoServices>();
             services.AddTransient<ITextServices, TextServices>();
             services.AddControllers();
             services.AddSwaggerGen(c =>

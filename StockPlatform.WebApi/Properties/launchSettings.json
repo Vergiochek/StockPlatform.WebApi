@@ -16,7 +16,8 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "DATABASE_NAME": "StockPlatformDb",
-        "TEXTS_COLLECTION_NAME": "Texts"
+        "TEXTS_COLLECTION_NAME": "Texts",
+        "PHOTOS_COLLECTION_NAME": "Photos"
       }
     },
     "StockPlatform.WebApi": {
@@ -28,7 +29,8 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "DATABASE_NAME": "StockPlatformDb",
-        "TEXTS_COLLECTION_NAME": "Texts"
+        "TEXTS_COLLECTION_NAME": "Texts",
+        "PHOTOS_COLLECTION_NAME": "Photos"
       }
     }
   }

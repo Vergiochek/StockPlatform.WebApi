@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 namespace StockPlatform.WebApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class StockPlatformController : ControllerBase
+    [Route("api/[controller]")]
+    public class TextsController : ControllerBase
     {
         private readonly ITextServices _textServices;
-        public StockPlatformController(ITextServices textServices)
+        public TextsController(ITextServices textServices)
         {
             _textServices = textServices;
         }
