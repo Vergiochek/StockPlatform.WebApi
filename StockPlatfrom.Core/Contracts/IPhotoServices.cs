@@ -9,10 +9,10 @@ namespace StockPlatfrom.Core
     public interface IPhotoServices
     {
         List<Photo> GetPhotos();
-        Photo GetPhoto(int id);
+        Photo GetPhoto(string id);
         Photo AddPhoto(Photo photo);
 
-        void DeletePhoto(int id);
+        void DeletePhoto(string id);
         Photo UpdatePhoto(Photo photo);
     }
 }

@@ -9,10 +9,10 @@ namespace StockPlatfrom.Core
     public interface ITextServices
     {
         List<Text> GetTexts();
-        Text GetText(int id);
+        Text GetText(string id);
         Text AddText(Text text);
 
-        void DeleteText(int id);
+        void DeleteText(string id);
         Text UpdateText(Text text);
     }
 }

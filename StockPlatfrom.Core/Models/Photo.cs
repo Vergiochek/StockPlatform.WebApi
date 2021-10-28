@@ -7,7 +7,7 @@ namespace StockPlatfrom.Core
     {
         [BsonId]
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
         public string ContentLink { get; set; }
         public string Sizes { get; set; }

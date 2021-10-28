@@ -24,7 +24,7 @@ namespace StockPlatform.WebApi.Controllers
         }
 
         [HttpGet("{id}", Name = "GetPhoto")]
-        public IActionResult GetPhoto(int id)
+        public IActionResult GetPhoto(string id)
         {
             return Ok(_photoServices.GetPhoto(id));
         }
@@ -37,7 +37,7 @@ namespace StockPlatform.WebApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeletePhoto(int id)
+        public IActionResult DeletePhoto(string id)
         {
             _photoServices.DeletePhoto(id);
             return NoContent();
