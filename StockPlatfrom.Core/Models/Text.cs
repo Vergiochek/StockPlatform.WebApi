@@ -1,19 +1,19 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
+using System;
 
 namespace StockPlatfrom.Core
 {
-    public class Photo
+    public class Text
     {
         [BsonId]
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
-        public string ContentLink { get; set; }
-        public string Sizes { get; set; }
-        public string DateOfCreation { get; set; }
+        public string Content { get; set; }
+        public string Size { get; set; }
+        public DateTime DateOfCreation { get; set; }
         public double Price { get; set; }
-        public string AuthorName { get; set; }
-        public string AuthorNickName { get; set; }
+        public Author Author { get; set; }
         public int NumberOfPurchases { get; set; }
     }
 }

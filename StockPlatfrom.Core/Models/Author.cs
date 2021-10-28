@@ -1,4 +1,5 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
+using System;
 
 namespace StockPlatfrom.Core
 {
@@ -6,10 +7,10 @@ namespace StockPlatfrom.Core
     {
         [BsonId]
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
-        public string Id { get; set; }
-        public string Name { get; set; }
-        public string NickName { get; set; }
+        public int Id { get; set; }
+        public string AuthorName { get; set; }
+        public string AuthorNickName { get; set; }
         public int Age { get; set; }
-        public string DateOfAccountCreation { get; set; }
+        public DateTime DateOfAccountCreation { get; set; }
     }
 }

@@ -19,12 +19,12 @@ namespace StockPlatfrom.Core
             return text;
         }
 
-        public void DeleteText(string id)
+        public void DeleteText(int id)
         {
             _texts.DeleteOne(text => text.Id == id);
         }
 
-        public Text GetText(string id) => _texts.Find(text => text.Id == id).First();
+        public Text GetText(int id) => _texts.Find(text => text.Id == id).First();
 
         public List<Text> GetTexts() => _texts.Find(text => true).ToList();
 

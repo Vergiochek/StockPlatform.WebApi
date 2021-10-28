@@ -19,12 +19,12 @@ namespace StockPlatfrom.Core
             return photo;
         }
 
-        public void DeletePhoto(string id)
+        public void DeletePhoto(int id)
         {
             _photos.DeleteOne(book => book.Id == id);
         }
 
-        public Photo GetPhoto(string id) => _photos.Find(photo => photo.Id == id).First();
+        public Photo GetPhoto(int id) => _photos.Find(photo => photo.Id == id).First();
 
         public List<Photo> GetPhotos() => _photos.Find(photo => true).ToList();
 

@@ -25,7 +25,7 @@ namespace StockPlatform.WebApi.Controllers
         }
 
         [HttpGet("{id}", Name = "GetText")]
-        public IActionResult GetText(string id)
+        public IActionResult GetText(int id)
         {
             return Ok(_textServices.GetText(id));
         }
@@ -38,7 +38,7 @@ namespace StockPlatform.WebApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteText(string id)
+        public IActionResult DeleteText(int id)
         {
             _textServices.DeleteText(id);
             return NoContent();
