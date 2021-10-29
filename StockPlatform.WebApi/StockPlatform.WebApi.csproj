@@ -6,10 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\StockPlatform.LoggerService\StockPlatform.LoggerService.csproj" />
     <ProjectReference Include="..\StockPlatfrom.Core\StockPlatfrom.Core.csproj" />
   </ItemGroup>
 

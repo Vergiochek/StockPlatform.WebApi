@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockPlatform.WebApi", "StockPlatform.WebApi\StockPlatform.WebApi.csproj", "{B7F5CB71-F08E-40DA-92A6-73D688C8D8AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockPlatform.WebApi", "StockPlatform.WebApi\StockPlatform.WebApi.csproj", "{B7F5CB71-F08E-40DA-92A6-73D688C8D8AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockPlatfrom.Core", "StockPlatfrom.Core\StockPlatfrom.Core.csproj", "{DD787530-055B-4EFC-A9C7-5107E1B73F96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockPlatfrom.Core", "StockPlatfrom.Core\StockPlatfrom.Core.csproj", "{DD787530-055B-4EFC-A9C7-5107E1B73F96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockPlatform.LoggerService", "StockPlatform.LoggerService\StockPlatform.LoggerService.csproj", "{C2257A82-FFF2-4EE6-809F-220BD02F8B57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DD787530-055B-4EFC-A9C7-5107E1B73F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD787530-055B-4EFC-A9C7-5107E1B73F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD787530-055B-4EFC-A9C7-5107E1B73F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2257A82-FFF2-4EE6-809F-220BD02F8B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2257A82-FFF2-4EE6-809F-220BD02F8B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2257A82-FFF2-4EE6-809F-220BD02F8B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2257A82-FFF2-4EE6-809F-220BD02F8B57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

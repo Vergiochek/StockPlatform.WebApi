@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using StockPlatform.LoggerService;
 using StockPlatfrom.Core;
 using System;
 using System.Collections.Generic;
